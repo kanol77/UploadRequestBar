@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Progress</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.PNG" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 onclick="window.location.reload()">Upload Image Files!</h1>
+    </header>
+
+    <article>
+
+        <div class="upload">
+            <input type="file" accept=".png, .jpg, .jpeg, .tiff, .gif, .raw" id="file">
+            <button id="upload-button">Upload File!</button>
+        </div>
+
+        <div class="progress">
+            <progress id="progress-bar" value="0" max="100"></progress><br>
+            <label id="lab" for="progress-bar">0%</label>
+        </div>
+
+    </article>
+
+    <footer>
+        <h3>Site created by kanol77</h3>
+    </footer>
+</body>
+</html>
